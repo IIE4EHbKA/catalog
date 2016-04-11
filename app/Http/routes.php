@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [
+    'as' => 'index', 'uses' => 'MainController@index'
+]);
 Route::post('feedback', [
     'as' => 'feedback', 'uses' => 'MainController@feedback'
 ]);

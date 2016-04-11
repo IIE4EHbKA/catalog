@@ -11,7 +11,45 @@
                         {{ session('status') }}
                     </div>
                 @endif
-                <div class="alert alert-danger">Ничего нет!</div>
+
+                <div class="category">
+                    Каталог
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 product">
+                        <div class="img-box">
+                            <img src="http://placemi.com/xruzn/600x700" class="img-responsive">
+                        </div>
+                        <h1>Christopher Di</h1>
+                        <h2>Co-founder/ Projects</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 product">
+                        <div class="img-box">
+                            <img src="http://placemi.com/wctme/600x700" class="img-responsive">
+                        </div>
+                        <h1>Heather H</h1>
+                        <h2>Co-founder/ Marketing</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 product">
+                        <div class="img-box">
+                            <img src="http://placemi.com/wctme/600x700" class="img-responsive">
+                        </div>
+                        <h1>Heather H</h1>
+                        <h2>Co-founder/ Marketing</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 product">
+                        <div class="img-box">
+                            <img src="http://placemi.com/wctme/600x700" class="img-responsive">
+                        </div>
+                        <h1>Heather H</h1>
+                        <h2>Co-founder/ Marketing</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
             </div>
             <div class="col-sm-12 col-md-4">
 
@@ -31,7 +69,8 @@
                                 <input type="text" name="name" class="form-control" placeholder="Ваше имя" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" name="email" class="form-control" placeholder="Ваш e-mail" required>
+                                <input type="email" name="email" class="form-control" placeholder="Ваш e-mail"
+                                       required>
                             </div>
                             <div class="form-group">
                                 <textarea name="text" name="message" class="form-control" rows="10"

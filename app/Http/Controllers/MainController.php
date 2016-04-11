@@ -10,6 +10,11 @@ use Illuminate\Support\Facades\Mail;
 
 class MainController extends Controller
 {
+
+    public function index()
+    {
+        return view('index');
+    }
     public function feedback()
     {
         $feed_data = [
