@@ -7,7 +7,7 @@
 
             <div class="col-sm-12 col-md-8">
                 @if (session('status'))
-                    <div class="alert alert-danger">
+                    <div class="alert alert-success">
                         {{ session('status') }}
                     </div>
                 @endif
@@ -18,16 +18,24 @@
                 <div class="panel panel-default">
                     <div class="panel-heading panel-heading-red">Связаться с нами</div>
                     <div class="panel-body">
+                        @if (session('send'))
+                            <div class="form-group">
+                                <div class="alert alert-danger">
+                                    {{ session('send') }}
+                                </div>
+                            </div>
+                        @endif
                         <form action="/feedback" method="post" id="feedback">
                             {!! csrf_field() !!}
                             <div class="form-group">
                                 <input type="text" name="name" class="form-control" placeholder="Ваше имя" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" name="email" class="form-control" placeholder="Ваш e-mail" required>
+                                <input type="email" name="email" class="form-control" placeholder="Ваш e-mail" required>
                             </div>
                             <div class="form-group">
-                                <textarea name="text" name="message" class="form-control" rows="10" placeholder="Ваше сообщение" required></textarea>
+                                <textarea name="text" name="message" class="form-control" rows="10"
+                                          placeholder="Ваше сообщение" required></textarea>
                             </div>
                             <div class="form-group">
                                 <button class="btn btn-block btn-danger">Отправить</button>
@@ -37,7 +45,6 @@
                 </div>
 
             </div>
-
 
 
         </div>

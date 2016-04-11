@@ -19,8 +19,9 @@ class MainController extends Controller
         ];
         Mail::send('email', $feed_data, function($message)
         {
-            $message->from('feedback@xdemo.ml', 'Сайт');
+            $message->from(Request::input('email'), Request::input('name'));
             $message->to('foo@example.com', 'Джон Смит')->subject('Письмо с сайта');
         });
+        return redirect('/')->with('send','Отправлено');
     }
 }
