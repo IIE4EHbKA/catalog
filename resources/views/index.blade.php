@@ -21,13 +21,13 @@
                     <div class="panel-body">
                         <form action="/feedback" id="feedback">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Ваше имя">
+                                <input type="text" class="form-control" placeholder="Ваше имя" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Ваш e-mail">
+                                <input type="text" class="form-control" placeholder="Ваш e-mail" required>
                             </div>
                             <div class="form-group">
-                                <textarea name="text" class="form-control" rows="10" placeholder="Ваше сообщение"></textarea>
+                                <textarea name="text" class="form-control" rows="10" placeholder="Ваше сообщение" required></textarea>
                             </div>
                             <div class="form-group">
                                 <button class="btn btn-block btn-danger">Отправить</button>
