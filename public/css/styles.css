@@ -211,43 +211,13 @@ button:focus,button:hover{
     background-color: #FFBB00;
 }
 
-.item{
-    border: 1px solid #e2e5e7;
-    margin: -1px 0px 0px -1px;
-}
-
-.item:hover{
-    cursor: pointer;
-    background-color: #fcfcfc;
-    -webkit-box-shadow: 0px 0px 5px 1px rgba(128,128,128,0.75);
-    -moz-box-shadow: 0px 0px 5px 1px rgba(128,128,128,0.75);
-    box-shadow: 0px 0px 5px 1px rgba(128,128,128,0.75);
-}
-
-.item .promo{
+.promo{
     position: absolute;
     top:0px;
     left: 5px;
 }
 
-
-.item .image{
-    margin: 15px auto;
-    height: 150px;
-    vertical-align: middle;
-    width: 100%;
-    min-width: 180px;
-    text-align: center;
-}
-.image img{
-    width: 100%;
-    height: 100%;
-}
-.item .title{
-    height: 50px;
-}
-
-.item .price {
+.price {
     display: block;
     text-align: center;
     right: -3px;
@@ -393,9 +363,13 @@ h4.description{
     padding: 5px 0px;
 }
 .product{
-    margin-top: 25px;
+    padding-top: 15px;
+    text-align: center;
+    margin-top: 15px;
 }
 .product:hover{
+    border-radius: 3px;
+    background-color: #f9f9f9;
     cursor: pointer;
 }
 .product h1{
@@ -409,10 +383,12 @@ h4.description{
     margin-top: 5px;
 }
 .product .img-box{
-    background-color: #a3a3a3;
     opacity: 1;
     display: block;
     position: relative;
+}
+.product img{
+    width: 100%;
 }
 .product .img-box:after{
     content:"";
@@ -423,4 +399,7 @@ h4.description{
     left: 0;
     top: 0;
     bottom: 0;
+}
+i{
+    font-weight: 100;
 }

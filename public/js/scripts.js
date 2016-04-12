@@ -14,8 +14,8 @@ d.parent(".dropdown-menu").length&&(d=d.closest("li.dropdown").addClass("active"
             'X-CSRF-TOKEN': $('meta[name="csrf_token"]').attr('content')
         }
     });
-    $(".item").on("click",function(){
-        var id = $(".item").data("id");
+    $(".product").on("click",function(){
+        var id = $(".product").data("id");
 
         $.ajax({
             type: "POST",
