@@ -57,12 +57,12 @@ class MainController extends Controller
     {
         $products = new Products;
 
-        if(Request::has('image')){
+        if(Request::file('image')){
             $file = Request::file('image');
             $image = hash('md5',date('Y-m-d H:i'));
             $filename = $image . '.jpg';
             if ($file) {
-                Storage::disk('local')->put($filename, File::get($file));
+                Storage::disk('public')->put($filename, File::get($file));
             }
             $products->image = 'files/'.$filename.'/preview';
         }else{
