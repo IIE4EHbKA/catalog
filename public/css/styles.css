@@ -231,6 +231,8 @@ button:focus,button:hover{
     font-size: 14px;
     font-weight: 500;
     color: #596472;
+    height: 30px;
+    max-height: 30px;
     text-overflow: ellipsis;
     overflow: hidden;
 }
@@ -388,7 +390,9 @@ h4.description{
     position: relative;
 }
 .product img{
-    width: 100%;
+    width: auto;
+    height: 150px;
+    margin: 0 auto;
 }
 .product .img-box:after{
     content:"";

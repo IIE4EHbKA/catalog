@@ -47,7 +47,6 @@ class MainController extends Controller
 
     public function admin()
     {
-        //Session::flush();
         $data['categories'] = Category::all();
         $data['products'] = Products::get_list();
         return view('admin', $data);
@@ -64,7 +63,7 @@ class MainController extends Controller
             if ($file) {
                 Storage::disk('public')->put($filename, File::get($file));
             }
-            $products->image = 'files/'.$filename.'/preview';
+            $products->image = '/files/'.$filename.'/preview';
         }else{
             $products->image = '/public/images/nophoto.jpg';
         }
@@ -99,7 +98,7 @@ class MainController extends Controller
                 'password' => hash('md5', Request::input('password'))
             ];
             if(User::where($login_data)->first()){
-                session(['isAdmin' => true]);
+                Session::put('isAdmin', true);
                 return redirect('admin');
             }else{
                 return redirect('login')->with('status', 'Данные не верны!');
