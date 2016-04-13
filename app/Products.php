@@ -20,7 +20,7 @@ class Products extends Model
     public static function get_list()
     {
         return DB::table('products')
-            ->join('category', 'products.category', '=', 'category.id')
+            ->join('category', 'products.category', '=', 'category.cid')
             ->select('*')
             ->paginate(12);
     }

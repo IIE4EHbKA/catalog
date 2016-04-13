@@ -18,7 +18,7 @@ class AdminMiddleware
     {
         if (!Session::has('isAdmin'))
         {
-            return redirect('/')->with('status','Доступ запрещен!');
+            return redirect('login')->with('status','Необходима авторизация');
         }
         return $next($request);
     }

@@ -8,7 +8,7 @@
             <div class="col-sm-12 col-md-8">
 
                 <div class="category">
-                    @if(!empty($id))
+                    @if(!empty($cid))
                         Категория: {{$name}}
 
                     @else
@@ -31,8 +31,8 @@
                                          class="img-responsive">
                                 </div>
                                 <h2 class="name">{{$product['name']}}</h2>
-                                <h2>Размер: 200x100x60мм</h2>
-                                <h2>В пачке: 50 шт./м.кв</h2>
+                                <h2>Размер: {{$product['size']}}</h2>
+                                <h2>В пачке: {{$product['pkg']}}</h2>
                                 <div class="price">{{$product['price']}}</div>
                             </div>
                         @endforeach
