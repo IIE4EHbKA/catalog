@@ -123,7 +123,7 @@
                                     <option disabled selected>Выбрать категорию</option>
                                     @if(!$categories->isEmpty())
                                         @foreach($categories as $category)
-                                            <option value="{{$category['id']}}">{{$category['category']}}</option>
+                                            <option value="{{$category['cid']}}">{{$category['category']}}</option>
                                         @endforeach
                                     @else
                                         <option value="9" selected>Прочее</option>
