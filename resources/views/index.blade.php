@@ -8,7 +8,7 @@
             <div class="col-sm-12 col-md-8">
 
                 <div class="category">
-                    @if(!empty($cid))
+                    @if(!empty($id))
                         Категория: {{$name}}
 
                     @else
