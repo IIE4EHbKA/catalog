@@ -14,7 +14,7 @@ class CategoryTable extends Migration
     {
         Schema::create('category', function(Blueprint $table)
         {
-            $table->increments('id');
+            $table->increments('cid');
             $table->string('category',255);
         });
     }
