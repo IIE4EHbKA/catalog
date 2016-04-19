@@ -74,7 +74,7 @@
                 </ul>
                 <div class="nav navbar-nav navbar-right">
                     <div class="tel">
-                        <div><i class="glyphicon glyphicon-earphone"></i> 8 (930) 284-19-73</div>
+                        <div><i class="glyphicon glyphicon-earphone"></i> 8 (906) 369-26-29</div>
                         <div><a href="#" data-toggle="modal" data-target="#map"><span
                                         class="map">Как проехать?</span></a></div>
                     </div>
