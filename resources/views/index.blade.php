@@ -31,9 +31,10 @@
                                          class="img-responsive">
                                 </div>
                                 <h2 class="name">{{$product['name']}}</h2>
-                                <h2>Размер: {{$product['size']}}</h2>
-                                <h2>В пачке: {{$product['pkg']}}</h2>
+                                <h2 class="size">Размер: {{$product['size']}}</h2>
+                                <h2 class="pkg">В пачке: {{$product['pkg']}}</h2>
                                 <div class="price">{{$product['price']}}</div>
+                                <button class="btn btn-danger btn-block">Подробнее</button>
                             </div>
                         @endforeach
                     @else

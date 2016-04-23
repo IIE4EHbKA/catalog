@@ -20,7 +20,7 @@ class MainController extends Controller
 
     public function index()
     {
-        $products = Products::paginate(12);
+        $products = Products::paginate(24);
         $data = [
             'title' => 'Главная страница',
             'products' => $products
@@ -32,7 +32,7 @@ class MainController extends Controller
     {
         $category = Category::find($id);
         if($category !== null){
-            $products = Products::where('category', $id)->paginate(12);
+            $products = Products::where('category', $id)->paginate(24);
             $data = [
                 'title' => 'Категория',
                 'id' => $id,

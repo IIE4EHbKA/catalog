@@ -22,7 +22,7 @@ class Products extends Model
         return DB::table('products')
             ->join('category', 'products.category', '=', 'category.cid')
             ->select('*')
-            ->paginate(12);
+            ->paginate(24);
     }
 
 }

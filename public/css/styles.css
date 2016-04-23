@@ -384,6 +384,9 @@ h4.description{
     font-weight: lighter;
     margin-top: 5px;
 }
+.product button{
+    margin-bottom: 10px;
+}
 .product .img-box{
     opacity: 1;
     display: block;
@@ -406,4 +409,8 @@ h4.description{
 }
 i{
     font-weight: 100;
+}
+.size,.pkg{
+    max-height: 14px;
+    overflow-y: hidden;
 }
