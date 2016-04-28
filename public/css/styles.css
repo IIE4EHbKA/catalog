@@ -136,6 +136,9 @@ button:focus,button:hover{
     .dropdown-menu-large .dropdown-header {
         padding: 3px 15px !important;
     }
+    .dropdown-menu-large > li > ul > li > a {
+        color: #fff;
+    }
 }
 .dropdown-menu{
     border-radius: 0;
