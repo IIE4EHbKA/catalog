@@ -18,12 +18,9 @@ branches:
     - master
 
 before_script:
-  - mysql -e 'create database <<database>>;'
   - travis_retry composer self-update
   - travis_retry composer install --prefer-source --no-interaction --dev
   - chmod -R 777 storage/
-  - php artisan migrate
-  - php artisan db:seed
   - php -S localhost:8000 -t public &
   - sleep 5 # give artisan serve some time to start
   - php vendor/bin/codecept build
